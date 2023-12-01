@@ -1,10 +1,12 @@
 import urllib.request, urllib.parse
 
 # Eingabedaten
-pnn = input("Bitte den Nachmen eingeben: ")
-pvn = input("Bitte den Vornamen eingeben: ")
+
+pnn = input("Bitte Nachnamen eingeben: ")
+pvn = input("Bitte Vornamen eingeben: ")
 
 # Dictionary mit Sendedaten, Codierung
+
 dc = {b"nn":pnn, b"vn":pvn}
 data = bytes(urllib.parse.urlencode(dc), "UTF-8")
 
